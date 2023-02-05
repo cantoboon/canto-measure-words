@@ -28,7 +28,7 @@ export default function Classifiers() {
                     </tr>
                 </thead>
                 <tbody>
-                    {classifiers?.map(c => <ClassifierEntry classifier={c} frequency={frequencies ? frequencies[c.character] : null} />)}
+                    {classifiers?.map(c => <ClassifierEntry key={c.character} classifier={c} frequency={frequencies ? frequencies[c.character] : null} />)}
                 </tbody>
             </table>
         </div>
@@ -47,7 +47,7 @@ function ClassifierEntry({classifier, frequency}: ClassifierEntryProps) {
             <td><a href={"/classifiers/" + classifier.character}><ChineseRuby classifier={classifier} /></a></td>
             <td>{classifier.jyutping}</td>
             <td>{classifier.description}</td>
-            <td>{classifier.nouns.map(n => <span>{n}</span>)}</td>
+            <td>{classifier.nouns.map(n => <span key={n}>{n}</span>)}</td>
             <td>{frequency}</td>
         </tr>
         

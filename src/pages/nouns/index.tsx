@@ -19,7 +19,7 @@ export default function Nouns({ nouns }: NounsProps) {
                     </tr>
                 </thead>
                 <tbody>
-                    {nouns.map(n => <NounSummary noun={n} />)}
+                    {nouns.map(n => <NounSummary key={n.traditional}noun={n} />)}
                 </tbody>
             </table>
         </>
@@ -40,7 +40,7 @@ export function NounSummary({noun}: NounSummaryProps) {
 }
 
 export async function getStaticProps(context: GetStaticProps) {
-    const definitions: Word[] = definitionData
+    const definitions: Word[] = definitionData as Word[]
     
     return {
         props: {
