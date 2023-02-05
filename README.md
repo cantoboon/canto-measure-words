@@ -1,3 +1,35 @@
+# Cantonese Measure Words
+
+A simple resource that allows users to look up the measure words applicable for a noun, and vice verse.
+
+## Building
+
+First, you'll need to retrieve the following data sets and copy them to these locations.
+
+- `src/pages/data/wordslist.json` - https://cantowords.com/faiman/analysis/wordslist.json
+- `src/pages/data/existingworkcount.json` - https://cantowords.com/faiman/analysis/existingwordcount.json
+
+### Development build
+
+```
+npm run dev
+```
+
+### Release build
+
+```
+npm run build
+```
+
+## Resources & Acknowledgements
+
+- [CantoWords](https://cantowords.com/faiman/analysis/wordslist/) - Word source list and dataset on word frequency.
+- []
+
+----
+
+## Next.js Information
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

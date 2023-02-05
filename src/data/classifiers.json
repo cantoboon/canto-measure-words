@@ -1,0 +1,33 @@
+[
+    {
+        "character": "個",
+        "jyutping": "go3",
+        "description": "go3 is the generic classifier. Useful if you don't know the specific classifier for a noun",
+        "nouns": [ "jan4" ]
+    },
+    {
+        "character": "盃",
+        "jyutping": "bui1",
+        "description": "cup, glass",
+        "nouns": [ "caa", "gaa fe"]
+    },
+    {
+        "character": "架",
+        "jyutping": "gaa3",
+        "description": "vehicles, cars, other modes of transport",
+        "nouns": ["ce1"]
+    },
+    {
+        "character": "碟",
+        "jyutping": "dip6",
+        "description": "dish, plate",
+        "nouns": []
+    },
+    {
+        "character": "包",
+        "jyutping": "baau1",
+        "description": "packet, parcel",
+        "nouns": []
+    }
+
+]
